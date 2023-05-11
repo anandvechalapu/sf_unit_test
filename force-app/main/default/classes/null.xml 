@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fields>
+    <fullName>Survey_Question_Choices_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Choice Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+    <visibleLines>6</visibleLines>
+  </fields>
+  <nameField>
+    <label>Name</label>
+    <type>AutoNumber</type>
+  </nameField>
+  <pluralLabel>Survey Question Choices</pluralLabel>
+  <sharingModel>ReadWrite</sharingModel>
+  <visibility>Public</visibility>
+  <listViews>
+    <fullName>All_Survey_Question_Choices</fullName>
+    <columns>Survey_Question_Choices_Name__c</columns>
+    <columns>Name</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Survey Question Choices</label>
+  </listViews>
+  <recordTypes>
+    <fullName>Survey_Question_Choices</fullName>
+    <active>true</active>
+    <label>Survey Question Choices</label>
+  </recordTypes>
+  <pageLayouts>
+    <fullName>Survey_Question_Choices_Layout</fullName>
+    <availableForNew>true</availableForNew>
+    <label>Survey Question Choices Layout</label>
+    <sections>
+      <detailHeading>false</detailHeading>
+      <label>Survey Question Choices</label>
+      <style>TwoColumnsLeft</style>
+      <fields>Survey_Question_Choices_Name__c</fields>
+    </sections>
+  </pageLayouts>
+  <tabSettings>
+    <defaultOn>true</defaultOn>
+    <tabs>Survey_Question_Choices</tabs>
+  </tabSettings>
+  <label>Survey Question Choices</label>
+  <lookupFilters>
+    <description>Lookup filter for Survey Question Choices</description>
+    <field>Survey_Question__c</field>
+    <active>true</active>
+    <type>RestrictDelete</type>
+  </lookupFilters>
+</CustomObject>
